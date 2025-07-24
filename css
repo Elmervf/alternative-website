@@ -1,0 +1,42 @@
+/* Modern Minimalist Styling */
+:root {
+  --primary-color: #3a86ff;  /* Accent color */
+  --text-color: #333;
+  --bg-color: #f9f9f9;
+  --card-bg: #fff;
+  --transition: all 0.3s ease;
+}
+
+[data-theme="dark"] {
+  --text-color: #f0f0f0;
+  --bg-color: #121212;
+  --card-bg: #1e1e1e;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Interactive Skill Bars */
+.skill__bar {
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 4px;
+}
+
+.skill__level {
+  height: 100%;
+  border-radius: 4px;
+  background: var(--primary-color);
+  width: 0; /* Animated via JS */
+  transition: width 1s ease;
+}
+
+/* Portfolio Hover Effect */
+.portfolio__item {
+  transition: transform 0.3s ease;
+}
+.portfolio__item:hover {
+  transform: translateY(-10px);
+}
